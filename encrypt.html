@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>encrypt</title>
+</head>
+<body>
+	<input type="text" id="pswd" />
+	<input type="button" id="button" value="Tran...">
+
+	<script src="Format.js"></script> 
+	<script src="NumberFormat.js"></script> 
+	<script src="DecimalFormat.js"></script> 
+	<script type="text/javascript" src="encrypt.js"></script>
+	<script type="text/javascript">
+		var pswd = document.getElementById("pswd");
+		var button = document.getElementById("button");
+		button.onclick = function (){
+			RSACode(pswd.value);
+		};
+	</script>
+</body>
+</html>
